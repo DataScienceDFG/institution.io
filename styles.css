@@ -1,0 +1,36 @@
+.heading{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 40px
+}
+
+.dropdown{width:150px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.labels{
+    flex: 1;
+    margin-right: 50px;
+    font-size: 20px
+}
+
+.btn{
+    margin-left: 450px;
+    /* margin-right: 20px; */
+    font-size: 20px;
+    background-color: coral;
+    border: none;
+    /* display: inline-block; */
+    /* display: flex; */
+    float: left;
+    width: 10%;
+    margin-bottom: 20px;
+}
+
+.llabels{
+    flex: 1;
+    margin-right: 200px;
+    font-size: 20px
+}
