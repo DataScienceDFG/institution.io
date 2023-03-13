@@ -23,7 +23,7 @@ function runEnter() {
     // This code will filter the movies looking at the actors column. It will store the values when there is a match from the text sequence the user entered and the text from our actors column from the CSV data.
     //var filteredMovies = movies.filter(movies => movies.Institution.includes(inputValue));
     //console.log(filteredMovies)
-    var filteredMovies = movies.filter(movies => movies.Institution.includes(inputValue) && movies.Year == inputyear);
+   var filteredMovies = movies.filter(movie => movie.Institution.toLowerCase().includes(inputValue.toLowerCase()) && movie.Year == inputyear);
  
 
     // This was the easiest approach I found to sort the results by a different column in descending order. I had to include a new script in my head to use the _.sortBy 
