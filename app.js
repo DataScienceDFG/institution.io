@@ -24,8 +24,6 @@ d3.csv("QS_STANDARD.csv").then(function (data) {
 
       mylist.push(parseInt(rank));
 
-      console.log(mylist)
-
       d3.select("tbody").insert("tr").html(
         "<td>" + (filteredInstitutions[i]['World Rank']) + "</a>" + "</td>" +
         "<td>" + (filteredInstitutions[i]['Institution']) + "</a>" + "</td>" +
@@ -34,7 +32,6 @@ d3.csv("QS_STANDARD.csv").then(function (data) {
         "<td>" + (filteredInstitutions[i]['Ranking']) + "</td>")
     }
 
-
     if (mylist.length === 0) {
       var minValue = "Rank not provided";
     } else {
@@ -42,6 +39,17 @@ d3.csv("QS_STANDARD.csv").then(function (data) {
     }
 
     document.getElementById("user-rank").value = minValue;
-
+    if (minValue >= 1 && minValue <= 200) {
+      document.getElementById("user-category").value = 'I';
+    }
+    if (minValue >= 200 && minValue <= 400) {
+      document.getElementById("user-category").value = 'II';
+    }
+    if (minValue >= 400 && minValue <= 600) {
+      document.getElementById("user-category").value = 'III';
+    }
+    if (minValue >= 600) {
+      document.getElementById("user-category").value = 'IV';
+    }
   };
 });
