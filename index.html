@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.2.3/jspdf.plugin.autotable.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <a href="https://sites.google.com/a/dataflowgroup.com/home-page/home" target="_blank">
+        <img src="images\Dataflow.png"  style="width:200px;height:70px">
+      </a>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+    <body>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <h1 class='heading'>Issuing Authority Rank</h1>
+    <form id="form">
+    
+
+   
+        <div class = 'labels'>
+            <label for="country_of_study">Institution Name:</label>
+            <input class = 'dropdown' id="user-input">
+       
+            <label class='labels' style = 'margin-left: 200px' for="years">Select the Year:</label>
+            <select id="user-years" name="years" class='dropdown' style = 'margin-right: -100px'>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+        <button id="button" class="btn">Search</button>
+    </form>
+    
+
+    <table class="table" cellpadding="10">
+    <thead>
+    <tr>
+    <th scope="col">World Ranking</th>
+    <th scope="col">Institution</th>
+    <th scope="col">Country</th>
+    <th scope="col">Year</th>
+    <th scope="col">Ranking</th>
+    </tr>
+    </thead>
+    <tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+    <div>
+        <label class='labels' style = 'margin-top: 50px' for="best_rank">Best Rank:</label>
+        <input class = 'dropdown' id="user-rank">
+    </div>
+
+</body>
+</html>
