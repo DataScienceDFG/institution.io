@@ -48,7 +48,7 @@ d3.csv("QS_STANDARD.csv").then(function (data) {
     if (minValue >= 400 && minValue <= 600) {
       document.getElementById("user-category").value = 'III';
     }
-    if (minValue >= 600) {
+    if (minValue >= 600 || minValue == 'Rank not provided') {
       document.getElementById("user-category").value = 'IV';
     }
   };
